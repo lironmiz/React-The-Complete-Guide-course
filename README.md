@@ -41,7 +41,9 @@ My goal with this course is to ensure that you feel confident working with React
 
 ![image](https://user-images.githubusercontent.com/91504420/235323079-183ad9fc-0092-4d86-862b-54ed22ba5db2.png)
 
-  + Introduction to machine learning
+  + JavaScript Refresher
+    + Let and Const 
+    + Arrow Functions 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -51,9 +53,48 @@ My goal with this course is to ensure that you feel confident working with React
 
 ## 1. TABLE OF CONTENTS
   - [1. TABLE OF CONTENTS](#1-table-of-contents)
+  - [2. JAVASCRIPT REFRESHER](#2-javascript-refresher)
   
-  
-  
+
+## 2. JAVASCRIPT REFRESHER
+
+![RonBurgundyAnchormanGIF](https://user-images.githubusercontent.com/91504420/235323465-d11b4618-a3fa-4c35-a0c1-976644591894.gif)
+
+In JavaScript, let and const are used to declare variables, but they differ in their behavior.
+
+let is used to declare variables that are block-scoped, meaning that they are only accessible within the block of code they are defined in, such as within a function or a loop. A variable declared with let can be reassigned a new value, but cannot be redeclared within the same block.
+
+const, on the other hand, is used to declare variables that are also block-scoped, but their value cannot be reassigned. A variable declared with const must be initialized at the time of declaration, and cannot be left uninitialized.
+
+In summary, use let when you need to declare a variable that can be reassigned and use const when you need to declare a variable whose value should not be changed.
+ 
+### Arrow function
+
+![CoolMinionsGIF](https://user-images.githubusercontent.com/91504420/235323658-6d56efb9-5050-4861-9753-f7376616c745.gif)
+
+In JavaScript, arrow functions provide a shorthand syntax for writing function expressions. They are commonly used in modern JavaScript frameworks and libraries.
+
+Here are some key points about arrow functions:
+
+Arrow functions have a concise syntax using an arrow (=>) symbol.
+They do not have their own this value and instead inherit it from the enclosing lexical scope.
+Arrow functions are always anonymous and cannot be named.
+If the function only has one parameter, the parentheses around the parameter can be omitted.
+If the function body consists of a single expression, the curly braces and return keyword can be omitted.
+
+```
+// Regular function
+function add(a, b) {
+  return a + b;
+}
+
+// Arrow function
+const add = (a, b) => a + b;
+```
+
+In summary, arrow functions are a concise and powerful syntax for writing function expressions in JavaScript, and are particularly useful for writing inline functions, callbacks, and event handlers.
+
+
 <!-- Contact -->
 # :handshake: Contact
 
