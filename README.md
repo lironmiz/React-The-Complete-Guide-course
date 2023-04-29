@@ -94,6 +94,36 @@ const add = (a, b) => a + b;
 
 In summary, arrow functions are a concise and powerful syntax for writing function expressions in JavaScript, and are particularly useful for writing inline functions, callbacks, and event handlers.
 
+### Exports & Imports 
+
+![EvilSpongebobGIF](https://user-images.githubusercontent.com/91504420/235324840-9d3640a1-99ed-4cec-bc53-5715c930ff0a.gif)
+
+In JavaScript, exports and imports are used to enable modules to be shared across multiple files. They are commonly used in modern JavaScript development, especially with the advent of ES6 modules.
+
+Here are some key points about exports and imports:
+
+exports is used to define what parts of a module should be made available for use in other files.
+exports can be assigned values directly, or used to attach properties to an object that can then be exported.
+import is used to bring in parts of a module that have been exported in another file.
+import statements must be placed at the top of a file, before any other code is executed.
+import statements can specify which parts of a module to import, and can use destructuring syntax to assign imported values to variables with different names.
+
+```
+// In module1.js
+const value1 = 10;
+const value2 = 20;
+
+exports.value1 = value1;
+exports.value2 = value2;
+
+// In module2.js
+import { value1, value2 } from './module1.js';
+
+console.log(value1); // Output: 10
+console.log(value2); // Output: 20
+```
+
+In summary, exports and imports are a powerful feature of modern JavaScript that enable modular and reusable code, and are an important tool for organizing code in larger applications.
 
 <!-- Contact -->
 # :handshake: Contact
