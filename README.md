@@ -45,6 +45,7 @@ My goal with this course is to ensure that you feel confident working with React
     + Let and Const 
     + Arrow Functions
     + React 
+    + JSX
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,7 +58,7 @@ My goal with this course is to ensure that you feel confident working with React
   - [2. JAVASCRIPT REFRESHER](#2-javascript-refresher)
   - [3. REACT](#3-react)
   - [4. HOW TO START REACT PROJECT](#4-how-to-start-react-project)
-  
+  - [5. JSX](#5-JSX)
 
 ## 2. JAVASCRIPT REFRESHER
 
@@ -187,6 +188,16 @@ npm run build
 ```
 
 This will create a build directory with all the files necessary to deploy your project.
+
+## 5. JSX
+
+![PrettyInnovativeStuffLadyDecadeGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/1a813f9c-2254-40e5-bde9-443a6f948cab)
+
+JSX, short for JavaScript XML, is an extension to JavaScript that allows you to write HTML-like code inside of JavaScript files. JSX is a popular feature of React, a JavaScript library for building user interfaces.
+
+JSX code is compiled into React elements, which are then rendered to the DOM. This makes it easy to write complex user interfaces without having to worry about the DOM directly.
+
+
 
 
 <!-- Contact -->
