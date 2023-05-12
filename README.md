@@ -43,7 +43,8 @@ My goal with this course is to ensure that you feel confident working with React
 
   + JavaScript Refresher
     + Let and Const 
-    + Arrow Functions 
+    + Arrow Functions
+    + React 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,6 +55,8 @@ My goal with this course is to ensure that you feel confident working with React
 ## 1. TABLE OF CONTENTS
   - [1. TABLE OF CONTENTS](#1-table-of-contents)
   - [2. JAVASCRIPT REFRESHER](#2-javascript-refresher)
+  - [3. REACT](#3-react)
+  - [4. HOW TO START REACT PROJECT](#4-how-to-start-react-project)
   
 
 ## 2. JAVASCRIPT REFRESHER
@@ -124,6 +127,67 @@ console.log(value2); // Output: 20
 ```
 
 In summary, exports and imports are a powerful feature of modern JavaScript that enable modular and reusable code, and are an important tool for organizing code in larger applications.
+
+## 3. REACT
+
+![SoItBeginsRainingGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/13be2e05-d2f3-49d9-95cf-b0a9af2142ae)
+
+
+React is a JavaScript library for building user interfaces. It is a declarative library, which means that you describe what you want your UI to look like, and React will figure out how to render it. This makes React very efficient and easy to use.e
+
+React is also very scalable. It can be used to build small, single-page applications, or large, complex web applications. It is also very popular, and there is a large community of developers who are using and contributing to React.
+
+Here are some of the benefits of using React:
+
+Declarative: React is a declarative library, which means that you describe what you want your UI to look like, and React will figure out how to render it. This makes React very efficient and easy to use.
+Scalable: React is very scalable. It can be used to build small, single-page applications, or large, complex web applications.
+Popular: React is very popular, and there is a large community of developers who are using and contributing to React.
+If you are looking for a JavaScript library for building user interfaces, React is a great option. It is efficient, scalable, and popular.
+
+![image](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/0d4c2225-2edd-4066-b6f6-4c39142fda0f)
+
+## 4. HOW TO START REACT PROJECT
+
+![ImaginationSpongebobSquarepantsGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/d75bee2e-c6c8-4a7b-9aa8-cee1b5a30f78)
+
++ Install Node.js and npm.\
+
++ Create a new directory for your project.
+
++ In the project directory, run the following command to create a new React project:
+
+```
+npx create-react-app my-app
+```
+
++ This will create a new directory called my-app with all the necessary files for a React project.
+
++ To start the development server, run the following command:
+
+```
+cd my-app
+npm start
+```
+
++ This will start a development server on port 3000. You can open your browser and go to http://localhost:3000 to see your project.
+
+
++ To make changes to your project, edit the files in the src directory.
+
++ To start the development server again, run the following command:
+
+```
+npm start
+```
+
++ To build your project for production, run the following command:
+
+```
+npm run build
+```
+
+This will create a build directory with all the files necessary to deploy your project.
+
 
 <!-- Contact -->
 # :handshake: Contact
