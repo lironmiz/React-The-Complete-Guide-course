@@ -50,6 +50,7 @@ My goal with this course is to ensure that you feel confident working with React
   + JSX expressions 
   + React props
   + Composition in react 
+  + Event handlers in react 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,7 +70,9 @@ My goal with this course is to ensure that you feel confident working with React
   - [9. JSX EXPRESSIONS](#9-jsx-expressions)
   - [10. REACT PROPS](#10-react-props)
   - [11. COMPOSITION IN REACT](#11-composition-in-react)
-
+  - [12. EVENT HANDLERS IN REACT](#12-event-handlers-in-react)
+  - [13. USESTATE IN REACT ](#13-usestate-in-react)
+  - 
 
 ## 2. JAVASCRIPT REFRESHER
 
@@ -426,6 +429,52 @@ There are two main types of composition in React:
 + Component Composition: This involves combining multiple components together to create a more complex component. By nesting components within each other, you can build a hierarchy of reusable building blocks. These components can be composed by passing props and data between them, allowing them to work together seamlessly.
 
 + Higher-Order Components (HOC): HOC is a pattern in React that enables component composition by wrapping one component with another. The HOC component takes in a component as input and returns a new component with additional functionality or data. This pattern allows you to enhance or modify the behavior of a component without changing its implementation.
+
+## 12. EVENT HANDLERS IN REACT
+
+![INeedToBePreparedSebastianGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/440946a1-4364-4ee1-af6a-a053220141c5)
+
+In React, event handlers are functions that are used to handle user interactions or events triggered by the user interface. They allow you to respond to various actions, such as clicks, input changes, form submissions, and more. Event handlers in React provide a way to add interactivity and dynamic behavior to your components.
+
+summary of event handlers in React:
+
++ Event Binding: Event handlers are typically bound to specific elements or components using event listeners. In React, event binding is done by passing a function reference as a prop to the corresponding event attribute in JSX.
+
++ Event Object: When an event is triggered, React automatically passes an event object as the first argument to the event handler function. This object contains information about the event, such as the target element, event type, and event-specific data.
+
++ Updating State: Event handlers often interact with the component's state to update and re-render the UI. You can use the setState method provided by React's component class or use state management libraries like Redux or MobX to manage the state updates.
+
++ Arrow Functions and Binding: When using event handlers, it's common to bind the context of this to the component instance. One approach is to use arrow functions, as they automatically capture the correct this value. Another option is explicitly binding the event handler function to the component instance using the bind method.
+
++ Preventing Default Behavior: In some cases, you may want to prevent the default behavior of certain events, such as preventing a form submission or preventing a link from navigating to a new page. React provides the preventDefault method on the event object to achieve this.
+
++ Passing Arguments: You can pass additional arguments to event handlers by using arrow functions or by using the bind method to bind the arguments. This allows you to access relevant data or values from the component's scope within the event handler function.
+
++ Lifecycle Methods: React provides lifecycle methods that can be used in conjunction with event handlers to perform certain actions when components are mounted, updated, or unmounted. These methods, such as componentDidMount or componentWillUnmount, can be used to add or remove event listeners appropriately.
+
+By leveraging event handlers in React, you can create interactive and dynamic user interfaces that respond to user actions, update state, and trigger desired behaviors.
+
+## 13. USESTATE IN REACT
+
+![ThisNeedsToChangeSmokeGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/7fadae99-90f2-4f47-bd55-7519a116ceef)
+
+In React, useState is a built-in hook that allows you to add state to functional components. It provides a way to declare and manage state variables within functional components, enabling them to have dynamic behavior and reactivity. Here's a summary of useState in React:
+
++ State Declaration: Using the useState hook, you can declare state variables within functional components. The hook returns an array with two elements: the current state value and a function to update the state. You assign these elements to variables, typically using array destructuring.
+
++ Initial State: When declaring a state variable with useState, you provide an initial value as the argument to the hook. The initial value is only used during the component's first render. It can be a primitive value (such as a number, string, or boolean) or a more complex data structure (like an object or array).
+
++ Updating State: To update the state value, you call the state update function returned by useState. React will re-render the component and reflect the updated state value. The state update function can be called with a new value or a function that receives the previous state value and returns the new state value based on it.
+
++ Immutable Updates: It's important to note that state updates in React are not performed by mutating the existing state directly. Instead, you provide a new value or a function that creates the new state value based on the previous state. React internally handles the comparison and merging of the new and old states.
+
++ Multiple State Variables: You can use useState multiple times within a single component to manage different state variables independently. Each state variable has its own state value and state update function.
+
++ State and Rendering: Whenever a state variable changes, React re-renders the component and its child components. This ensures that the UI reflects the latest state values and provides a reactive user interface.
+
++ Functional Updates: When updating state based on the previous state value, it's recommended to use the functional update form. By passing a function to the state update function, React guarantees that you are working with the most up-to-date state value, even in situations with asynchronous updates or batched state updates.
+
+Using useState, you can incorporate state management within functional components, allowing them to have dynamic behavior, respond to user interactions, and update their rendering based on changing state values.
 
 <!-- Contact -->
 # :handshake: Contact
