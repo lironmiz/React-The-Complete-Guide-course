@@ -47,6 +47,9 @@ My goal with this course is to ensure that you feel confident working with React
   + React 
   + JSX
   + React components 
+  + JSX expressions 
+  + React props
+  + Composition in react 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -59,10 +62,15 @@ My goal with this course is to ensure that you feel confident working with React
   - [2. JAVASCRIPT REFRESHER](#2-javascript-refresher)
   - [3. REACT](#3-react)
   - [4. HOW TO START REACT PROJECT](#4-how-to-start-react-project)
-  - [5. JSX](#5-JSX)
+  - [5. JSX](#5-jsx)
   - [6. HOW REACT WORKS](#6-how-react-works)
   - [7. REACT COMPONENTS](#7-react-components)
   - [8. STYLE REACT COMPONENTS](#8-style-react-components)
+  - [9. JSX EXPRESSIONS](#9-jsx-expressions)
+  - [10. REACT PROPS](#10-react-props)
+  - [11. COMPOSITION IN REACT](#11-composition-in-react)
+
+
 ## 2. JAVASCRIPT REFRESHER
 
 ![RonBurgundyAnchormanGIF](https://user-images.githubusercontent.com/91504420/235323465-d11b4618-a3fa-4c35-a0c1-976644591894.gif)
@@ -357,6 +365,67 @@ const MyComponent = () => {
 export default MyComponent;
 
 ```
+
+## 9. JSX EXPRESSIONS
+
+![TheyAreSuperImportantToMePellekGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/b60a08b6-4fc2-4bcc-a03c-e0e853265584)
+
+JSX expressions allow you to embed JavaScript code within your JSX syntax, enabling dynamic content and logic in your React components. Here's a short summary of JSX expressions:
+
++ JavaScript Code Embedding: JSX expressions allow you to embed JavaScript code by enclosing it within curly braces {}. This enables you to use variables, functions, and expressions directly in your JSX.
+
++ Dynamic Content: JSX expressions are commonly used to render dynamic content within components. You can include JavaScript expressions inside JSX tags or attributes to dynamically generate content based on variables or function results.
+
++ Conditional Rendering: JSX expressions allow you to conditionally render elements based on JavaScript conditions using ternary operators or logical operators. This allows for dynamic rendering of components based on specific conditions.
+
++ Iteration: JSX expressions can be combined with JavaScript's map function to iterate over arrays and generate multiple elements dynamically. This is commonly used when rendering lists or collections of components.
+
++ Component Interpolation: JSX expressions enable you to interpolate components within other components. By using curly braces {} and providing the component as a JSX expression, you can include components dynamically based on certain conditions or variables.
+
+Overall, JSX expressions provide the flexibility to incorporate JavaScript code within JSX syntax, allowing for dynamic rendering, conditional logic, and the ability to iterate over data. They are a powerful feature in React that enables the creation of interactive and flexible UI components.
+
+## 10. REACT PROPS
+
+![DataDataBoomGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/24df5368-1848-4070-abf9-21af4078a786)
+
+
+React props (short for properties) are a fundamental concept in React for passing data from a parent component to a child component. 
+
++ Definition: Props are a way to pass data from a parent component to a child component. They are similar to function arguments or parameters.
+
++ Usage: Props are passed as attributes to child components in JSX. They can contain any JavaScript value, such as strings, numbers, objects, or even functions.
+
++ Immutable: Props are immutable, meaning they cannot be modified by the child component. They are read-only and should not be directly modified within the child component.
+
++ Component Communication: Props facilitate communication between components in a unidirectional flow. Changes in props trigger updates in the child component's rendering.
+
++ Declaring Props: Props are declared in the child component by defining them as parameters in the component's function or class definition.
+
++ Accessing Props: In functional components, props can be accessed directly within the component's body. In class-based components, props are accessed via the this.props object.
+
++ Destructuring Props: To simplify prop access, you can use destructuring in both functional and class-based components.
+
++ Default Props: You can set default values for props using the defaultProps property. If a prop is not provided, the default value will be used.
+
++ Validation: Prop types can be defined to validate the expected types of props using the prop-types library. This helps catch potential errors during development.
+
++ Context: React provides a feature called "context" that allows props to be accessed by multiple components without explicitly passing them through intermediate components.
+
+Props play a crucial role in React's component-based architecture, enabling the composition and reusability of components by passing and updating data across the component tree.
+
+## 11. COMPOSITION IN REACT
+
+![LessIsMoreCocoLiliGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/6abbfd66-c080-4d71-bf0c-722a66936838)
+
+Composition in React is a design pattern that promotes the composition of smaller, reusable components to build complex user interfaces. It encourages breaking down large components into smaller, more manageable ones, which can then be combined to create the desired UI.
+
+Composition in React involves creating components that encapsulate a specific piece of functionality or behavior, and then combining these components to form a larger component or application. This approach promotes reusability, modularity, and maintainability.
+
+There are two main types of composition in React:
+
++ Component Composition: This involves combining multiple components together to create a more complex component. By nesting components within each other, you can build a hierarchy of reusable building blocks. These components can be composed by passing props and data between them, allowing them to work together seamlessly.
+
++ Higher-Order Components (HOC): HOC is a pattern in React that enables component composition by wrapping one component with another. The HOC component takes in a component as input and returns a new component with additional functionality or data. This pattern allows you to enhance or modify the behavior of a component without changing its implementation.
 
 <!-- Contact -->
 # :handshake: Contact
