@@ -42,10 +42,11 @@ My goal with this course is to ensure that you feel confident working with React
 ![image](https://user-images.githubusercontent.com/91504420/235323079-183ad9fc-0092-4d86-862b-54ed22ba5db2.png)
 
   + JavaScript Refresher
-    + Let and Const 
-    + Arrow Functions
-    + React 
-    + JSX
+  + Let and Const 
+  + Arrow Functions
+  + React 
+  + JSX
+  + React components 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -59,7 +60,9 @@ My goal with this course is to ensure that you feel confident working with React
   - [3. REACT](#3-react)
   - [4. HOW TO START REACT PROJECT](#4-how-to-start-react-project)
   - [5. JSX](#5-JSX)
-
+  - [6. HOW REACT WORKS](#6-how-react-works)
+  - [7. REACT COMPONENTS](#7-react-components)
+  - [8. STYLE REACT COMPONENTS](#8-style-react-components)
 ## 2. JAVASCRIPT REFRESHER
 
 ![RonBurgundyAnchormanGIF](https://user-images.githubusercontent.com/91504420/235323465-d11b4618-a3fa-4c35-a0c1-976644591894.gif)
@@ -197,8 +200,163 @@ JSX, short for JavaScript XML, is an extension to JavaScript that allows you to 
 
 JSX code is compiled into React elements, which are then rendered to the DOM. This makes it easy to write complex user interfaces without having to worry about the DOM directly.
 
+## 6. HOW REACT WORKS
 
+![ThatsHowThatWorksThatsHowItsDoneGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/a95b4f2b-3779-46c9-9170-f2ea8a94fee7)
 
+React is a JavaScript library for building user interfaces. It is a declarative library, which means that you describe what you want your UI to look like, and React takes care of how to render it.
+
+React uses a virtual DOM to represent the state of your UI. The virtual DOM is a lightweight representation of the actual DOM. When you make changes to your UI, React compares the virtual DOM to the actual DOM and only updates the parts of the actual DOM that have changed. This is called reconciliation.
+
+React also uses a component-based architecture. Components are reusable blocks of code that can be used to build complex UIs. Components are easy to test and maintain, and they make it easy to scale your UI.
+
+## 7. REACT COMPONENTS
+
+![JagyasiniSinghFindnewjagGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/c3f1b869-8e57-4783-b0e3-b46eee4caadd)
+
+eact components are the building blocks of a user interface in React, a popular JavaScript library for building user interfaces. In React, components are reusable and self-contained units of code that encapsulate a specific set of functionality and user interface elements.
+
+Components in React can be thought of as custom HTML elements with associated behavior and state. They can be composed together to create complex user interfaces. React components can be either class-based components or function components, with the latter being the preferred approach in modern React development.
+
+In the MyComponent.js file, you'll define your component. You can create a functional component or a class-based component, depending on your needs.
+
+Functional Component Example:
+
+```
+import React from 'react';
+
+function MyComponent() {
+  return <div>Hello, World!</div>;
+}
+
+export default MyComponent;
+```
+
+Class-based Component Example:
+
+```
+import React from 'react';
+
+class MyComponent extends React.Component {
+  render() {
+    return <div>Hello, World!</div>;
+  }
+}
+
+export default MyComponent;
+```
+
+Step 3: Use the Component
+To use your newly created component, open the src/App.js file in your project and import your component at the top of the file:
+
+```
+import React from 'react';
+import MyComponent from './MyComponent';
+
+function App() {
+  return (
+    <div>
+      <h1>Welcome to my React App</h1>
+      <MyComponent />
+    </div>
+  );
+}
+
+export default App;
+```
+
+## 8. STYLE REACT COMPONENTS
+
+![FashionStyleGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/05a2e2f2-e224-4fea-bb9b-0d8fb0ff0edf)
+
+Styling React components can be done in several ways. Here are a few common approaches:
+
+Inline Styles: You can apply styles directly to your React components using inline styles. Inline styles are defined as JavaScript objects, where the keys are the CSS properties, and the values are the corresponding styles.
+jsx
+
+```
+import React from 'react';
+
+const MyComponent = () => {
+  const styles = {
+    backgroundColor: 'blue',
+    color: 'white',
+    padding: '10px',
+    borderRadius: '5px'
+  };
+
+  return <div style={styles}>Hello, World!</div>;
+};
+
+export default MyComponent;
+
+```
+
+CSS Stylesheets: You can create a separate CSS file and import it into your React component. Define CSS rules in the file, and the styles will be applied to the corresponding component.
+
+```
+// styles.css
+.myComponent {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+// MyComponent.jsx
+import React from 'react';
+import './styles.css';
+
+const MyComponent = () => {
+  return <div className="myComponent">Hello, World!</div>;
+};
+
+export default MyComponent;
+
+```
+CSS Modules: CSS Modules allow you to write CSS styles locally for each component, avoiding global style conflicts. When you import a CSS module, you get an object with unique names for each style.
+
+```
+// MyComponent.module.css
+.myComponent {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+// MyComponent.jsx
+import React from 'react';
+import styles from './MyComponent.module.css';
+
+const MyComponent = () => {
+  return <div className={styles.myComponent}>Hello, World!</div>;
+};
+
+export default MyComponent;
+
+```
+
+CSS-in-JS Libraries: There are popular CSS-in-JS libraries like styled-components, Emotion, and CSS Modules with TypeScript that allow you to write CSS directly within your JavaScript/JSX code. These libraries provide powerful features for dynamic styling and easy component-specific styles.
+
+```
+import React from 'react';
+import styled from 'styled-components';
+
+const StyledComponent = styled.div`
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+`;
+
+const MyComponent = () => {
+  return <StyledComponent>Hello, World!</StyledComponent>;
+};
+
+export default MyComponent;
+
+```
 
 <!-- Contact -->
 # :handshake: Contact
