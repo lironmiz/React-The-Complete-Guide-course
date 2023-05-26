@@ -72,7 +72,7 @@ My goal with this course is to ensure that you feel confident working with React
   - [11. COMPOSITION IN REACT](#11-composition-in-react)
   - [12. EVENT HANDLERS IN REACT](#12-event-handlers-in-react)
   - [13. USESTATE IN REACT ](#13-usestate-in-react)
-  - 
+  - [14. TWO WAY BINDING IN REACT ](#14-two-way-binding-in-react)
 
 ## 2. JAVASCRIPT REFRESHER
 
@@ -475,6 +475,22 @@ In React, useState is a built-in hook that allows you to add state to functional
 + Functional Updates: When updating state based on the previous state value, it's recommended to use the functional update form. By passing a function to the state update function, React guarantees that you are working with the most up-to-date state value, even in situations with asynchronous updates or batched state updates.
 
 Using useState, you can incorporate state management within functional components, allowing them to have dynamic behavior, respond to user interactions, and update their rendering based on changing state values.
+
+## 14. TWO WAY BINDING IN REACT
+
+![WeCanStartAgainPaulDuToitGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/cbbbfd82-1903-4e6f-8b25-5d538bd2d02b)
+
+Two-way binding in React refers to the ability to synchronize the state of a component with the values entered by a user in an input field. It allows changes made to the input field to update the component's state, and vice versa. This synchronization happens in real-time, ensuring that both the component and the input field remain updated with the latest values.
+
+In React, two-way binding is typically achieved by using controlled components. Controlled components are components that manage their state through the React component's state property. To implement two-way binding, you need to define an event handler that updates the component's state whenever the input value changes and assign the input value to the component's state.
+
+When the user enters new data into the input field, the event handler is triggered, updating the component's state. Consequently, the updated state propagates to the input field, displaying the new value. This bidirectional flow of data allows for real-time synchronization between the component and the input field.
+
+Two-way binding is particularly useful in form inputs, where user input needs to be captured and processed by the component. By keeping the component's state and the input field value in sync, you can easily manage and manipulate the data entered by the user.
+
+It's important to note that in React, two-way binding is typically implemented manually using state and event handlers, unlike frameworks like Angular, which provide built-in support for automatic two-way binding.
+
+
 
 <!-- Contact -->
 # :handshake: Contact
