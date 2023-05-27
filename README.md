@@ -51,6 +51,7 @@ My goal with this course is to ensure that you feel confident working with React
   + React props
   + Composition in react 
   + Event handlers in react 
+  + Rendering Lists & Conditional Content
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,6 +74,8 @@ My goal with this course is to ensure that you feel confident working with React
   - [12. EVENT HANDLERS IN REACT](#12-event-handlers-in-react)
   - [13. USESTATE IN REACT ](#13-usestate-in-react)
   - [14. TWO WAY BINDING IN REACT ](#14-two-way-binding-in-react)
+  - [15. CONTROLLED AND UNCONTROLLED COMPONENTS IN REACT ](#15-controlled-and-uncontrolled-components-in-react)
+  - [16. STYLING REACT COMPONENTS ](#16-styling-react-components)
 
 ## 2. JAVASCRIPT REFRESHER
 
@@ -490,7 +493,73 @@ Two-way binding is particularly useful in form inputs, where user input needs to
 
 It's important to note that in React, two-way binding is typically implemented manually using state and event handlers, unlike frameworks like Angular, which provide built-in support for automatic two-way binding.
 
+## 15. CONTROLLED AND UNCONTROLLED COMPONENTS IN REACT
 
+![OutOfControlScherezadeShroffGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/42cd80fc-47fd-44af-97ff-3d29edd16081)
+
+Controlled components and uncontrolled components are two concepts in React that refer to different ways of managing form inputs and their state.
+
+Controlled Components:
+Controlled components are React components that manage the state of form inputs. In a controlled component, the value of the input field is controlled by React state. Whenever the user types in the input field or makes changes, an event handler updates the state, and the component is re-rendered with the new value. The state acts as the single source of truth for the input value.
+Advantages of Controlled Components:
+
+The component has full control over the input value and can enforce validations or manipulate it before updating the state.
+The current value of the input can be easily accessed or modified by other components that have access to the state.
+Disadvantages of Controlled Components:
+
+Requires more code to set up and maintain compared to uncontrolled components.
+Can be slower for large forms as each keypress triggers a state update and re-render.
+Uncontrolled Components:
+Uncontrolled components are React components that leave the management of form input values to the DOM. In this approach, the value of the input field is handled by the DOM itself, and React does not have direct control over it. Instead, you can use refs to access the input field value when needed.
+Advantages of Uncontrolled Components:
+
+Simpler to set up and require less code compared to controlled components.
+Can be more performant for large forms as React doesn't need to handle every input change.
+Disadvantages of Uncontrolled Components:
+
+Limited control over the input value and its behavior, as it's managed by the DOM.
+Difficult to enforce validations or perform manipulations on the input value before using it.
+In summary, controlled components provide more control and flexibility over form inputs but require more code and can be slower. Uncontrolled components are simpler to set up and can be more performant but offer less control over input values. The choice between the two depends on the specific requirements of your application and the level of control you need over form inputs.
+
+## 16. STYLING REACT COMPONENTS 
+
+![IAlreadyHaveGreatStyleShreyaGIF](https://github.com/lironmiz/React-The-Complete-Guide-course/assets/91504420/1365f1a2-52f0-4046-b073-ef8d1151b161)
+
+Styling React components can be done in various ways, ranging from inline styles to using CSS modules. Here's a summary of different styling approaches in React:
+
+Inline Styles:
+React allows you to define styles directly in the JSX code using inline styles. Inline styles are defined as JavaScript objects where CSS properties are written in camelCase. Inline styles are applied directly to the component using the style attribute.
+Advantages:
+
+Styles are scoped to the specific component.
+Dynamic styles can be easily applied based on component state or props.
+Disadvantages:
+
+Inline styles can become verbose and clutter the JSX code.
+Limited reusability and maintainability, as styles are tied directly to the component.
+CSS Stylesheets:
+You can use traditional CSS stylesheets with React components. Stylesheets are written in separate .css files and imported into the components using the import statement. The CSS classes defined in the stylesheets can be applied to the components using the className attribute.
+Advantages:
+
+Familiar syntax and separation of concerns between HTML structure and styles.
+Reusability of styles across multiple components.
+Various CSS features like media queries, keyframes, etc., can be used.
+Disadvantages:
+
+Global scope: CSS classes defined in stylesheets can potentially affect other components.
+Limited encapsulation: It can be challenging to achieve complete encapsulation of styles for individual components.
+CSS Modules:
+CSS Modules is an approach that combines the benefits of CSS stylesheets and component scoping. CSS Modules allow you to write styles in separate .css files, but the styles are automatically scoped to the specific component they are imported into.
+Advantages:
+
+Styles are scoped to the component, preventing unintentional style conflicts.
+Reusability of styles while maintaining encapsulation.
+Supports dynamic styles based on component state or props.
+Disadvantages:
+
+Requires additional configuration setup in your React project.
+Slightly different syntax and usage compared to traditional CSS stylesheets.
+In summary, inline styles offer direct and dynamic styling within the component but can be verbose. CSS stylesheets provide separation of concerns and reusability but have global scope. CSS Modules combine the benefits of both approaches, providing scoped styles and reusability, but require additional configuration. The choice depends on your project's requirements, scalability needs, and personal preferences.
 
 <!-- Contact -->
 # :handshake: Contact
